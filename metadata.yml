@@ -2,37 +2,38 @@ Identifier: eos4rw4
 Slug: cddd-onnx
 Status: In progress
 Title: Continuous and data-driven descriptor (CDDD)
-Description: Low dimension continuous descriptor based on a neural machine translation
-  model. This model has been trained by inputting a IUPAC molecular representaion
-  to obtain its SMILES. Tthe intermediate continuous vector representation encoded
-  by when reading the IUPAC name is a representation of the molecule, containing all
-  the information to generate the output sequence (SMILES). This model has been pretrained
-  on a large dataset combining ChEMBL and ZINC, and embedded in ONNX format for ease
-  of use
+Description: Low dimension continuous descriptor based on a neural machine 
+  translation model. This model has been trained by inputting a IUPAC molecular 
+  representaion to obtain its SMILES. Tthe intermediate continuous vector 
+  representation encoded by when reading the IUPAC name is a representation of 
+  the molecule, containing all the information to generate the output sequence 
+  (SMILES). This model has been pretrained on a large dataset combining ChEMBL 
+  and ZINC, and embedded in ONNX format for ease of use
 Deployment:
-- Local
+  - Local
 Source: Local
 Source Type: External
 Task: Representation
 Subtask: Featurization
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Output:
-- Value
+  - Value
 Output Dimension: 512
 Output Consistency: Fixed
-Interpretation: 'Descriptor of the molecule calculated with the CDDD package'
+Interpretation: Descriptor of the molecule calculated with the CDDD package
 Tag:
-- Embedding
-- Descriptor
-- Chemical language model
+  - Embedding
+  - Descriptor
+  - Chemical language model
 Biomedical Area:
-- Any
+  - Any
 Target Organism:
-- Any
+  - Any
 Publication Type: Peer reviewed
 Publication Year: 2025
 Publication: https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc04175j
 Source Code: https://github.com/sergsb/cddd-onnx
 License: MIT
+Incorporation Date: '2025-11-29'
