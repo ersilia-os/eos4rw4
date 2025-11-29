@@ -2,6 +2,7 @@
 
 Low dimension continuous descriptor based on a neural machine translation model. This model has been trained by inputting a IUPAC molecular representaion to obtain its SMILES. Tthe intermediate continuous vector representation encoded by when reading the IUPAC name is a representation of the molecule, containing all the information to generate the output sequence (SMILES). This model has been pretrained on a large dataset combining ChEMBL and ZINC, and embedded in ONNX format for ease of use
 
+This model was incorporated on 2025-11-29.
 
 
 ## Information
@@ -43,8 +44,11 @@ _10 of 512 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `External`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `202`
+- **Environment Size (Mb):** `721`
 
 
 ### References
