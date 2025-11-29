@@ -37,3 +37,6 @@ Publication: https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc04175j
 Source Code: https://github.com/sergsb/cddd-onnx
 License: MIT
 Incorporation Date: '2025-11-29'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip
+Model Size: 202.0
+Environment Size: 721.0
