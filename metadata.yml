@@ -14,7 +14,7 @@ Deployment:
 Source: Local
 Source Type: External
 Task: Representation
-Subtask: PFeaturization
+Subtask: Featurization
 Input:
 - Compound
 Input Dimension: 1
