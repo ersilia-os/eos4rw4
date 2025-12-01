@@ -2,6 +2,9 @@
 import os
 import csv
 import sys
+import json
+import numpy as np
+import struct
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
