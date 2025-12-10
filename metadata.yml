@@ -38,7 +38,7 @@ Source Code: https://github.com/sergsb/cddd-onnx
 License: MIT
 Incorporation Date: '2025-11-29'
 Last Packaging Date: '2025-12-10'
-Release: v1.0.1
+Release: v1.1.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos4rw4
 Docker Architecture:
