@@ -2,7 +2,7 @@
 
 Low dimension continuous descriptor based on a neural machine translation model. This model has been trained by inputting a IUPAC molecular representaion to obtain its SMILES. Tthe intermediate continuous vector representation encoded by when reading the IUPAC name is a representation of the molecule, containing all the information to generate the output sequence (SMILES). This model has been pretrained on a large dataset combining ChEMBL and ZINC, and embedded in ONNX format for ease of use
 
-This model was incorporated on 2025-11-29.Last packaged on 2025-12-10.
+This model was incorporated on 2025-11-29.Last packaged on 2025-12-16.
 
 ## Information
 ### Identifiers
@@ -50,12 +50,12 @@ _10 of 512 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `101`
 - **Environment Size (Mb):** `721`
-- **Image Size (Mb):** `946.31`
+- **Image Size (Mb):** `946.33`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.21`
-- 100 inputs: `20.29`
-- 10000 inputs: `176.62`
+- 10 inputs: `27.99`
+- 100 inputs: `19.91`
+- 10000 inputs: `172.14`
 
 ### References
 - **Source Code**: [https://github.com/sergsb/cddd-onnx](https://github.com/sergsb/cddd-onnx)
