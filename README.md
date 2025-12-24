@@ -2,7 +2,7 @@
 
 Low dimension continuous descriptor based on a neural machine translation model. This model has been trained by inputting a IUPAC molecular representaion to obtain its SMILES. Tthe intermediate continuous vector representation encoded by when reading the IUPAC name is a representation of the molecule, containing all the information to generate the output sequence (SMILES). This model has been pretrained on a large dataset combining ChEMBL and ZINC, and embedded in ONNX format for ease of use
 
-This model was incorporated on 2025-11-29.Last packaged on 2025-12-16.
+This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 
 ## Information
 ### Identifiers
@@ -44,18 +44,18 @@ _10 of 512 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4rw4](https://hub.docker.com/r/ersiliaos/eos4rw4)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `2724`
 - **Environment Size (Mb):** `958`
-- **Image Size (Mb):** `946.33`
+- **Image Size (Mb):** `5112.28`
 
 **Computational Performance (seconds):**
-- 10 inputs: `27.99`
-- 100 inputs: `19.91`
-- 10000 inputs: `172.14`
+- 10 inputs: `31.09`
+- 100 inputs: `24.85`
+- 10000 inputs: `426.01`
 
 ### References
 - **Source Code**: [https://github.com/sergsb/cddd-onnx](https://github.com/sergsb/cddd-onnx)
