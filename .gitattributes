@@ -1,2 +1,6 @@
-mock.txt filter=lfs diff=lfs merge=lfs -text
 model/checkpoints/encoder.onnx filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/fpsim2_database_chembl.h5 filter=lfs diff=lfs merge=lfs -text
+model/checkpoints/fpsim2_database_chembl_smiles.csv filter=lfs diff=lfs merge=lfs -text
+model/framework/fit/data/chembl_36_chemreps.txt filter=lfs diff=lfs merge=lfs -text
+model/framework/fit/data/chembl36_smiles.csv filter=lfs diff=lfs merge=lfs -text
+model/framework/fit/data/chembl36_smiles_no_nans.csv filter=lfs diff=lfs merge=lfs -text
