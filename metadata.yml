@@ -37,18 +37,16 @@ Publication: https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc04175j
 Source Code: https://github.com/sergsb/cddd-onnx
 License: MIT
 Incorporation Date: '2025-11-29'
-Last Packaging Date: '2025-12-16'
+Last Packaging Date: '2025-12-24'
 Release: v1.1.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos4rw4
-Docker Architecture:
-  - AMD64
-  - ARM64
+Docker Architecture: AMD64
 Model Size: 2724.0
 Environment Size: 958.0
-Image Size: 946.33
-Computational Performance 1: 27.99
-Computational Performance 2: 17.75
-Computational Performance 3: 19.91
-Computational Performance 4: 47.91
-Computational Performance 5: 172.14
+Image Size: 5112.28
+Computational Performance 1: 31.09
+Computational Performance 2: 21.58
+Computational Performance 3: 24.85
+Computational Performance 4: 98.79
+Computational Performance 5: 426.01
