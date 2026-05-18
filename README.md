@@ -1,6 +1,6 @@
 # Continuous and data-driven descriptor (CDDD)
 
-Low dimension continuous descriptor based on a neural machine translation model. This model has been trained by inputting a IUPAC molecular representaion to obtain its SMILES. Tthe intermediate continuous vector representation encoded by when reading the IUPAC name is a representation of the molecule, containing all the information to generate the output sequence (SMILES). This model has been pretrained on a large dataset combining ChEMBL and ZINC, and embedded in ONNX format for ease of use
+Low dimension continuous descriptor based on a neural machine translation model. This model has been trained by inputting a IUPAC molecular representaion to obtain its SMILES. The intermediate continuous vector representation encoded by when reading the IUPAC name is a representation of the molecule, containing all the information to generate the output sequence (SMILES). This model has been pretrained on a large dataset combining ChEMBL and ZINC, and embedded in ONNX format for ease of use
 
 This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 
@@ -59,7 +59,7 @@ _10 of 512 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/sergsb/cddd-onnx](https://github.com/sergsb/cddd-onnx)
-- **Publication**: [https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc04175j](https://pubs.rsc.org/en/content/articlelanding/2019/sc/c8sc04175j)
+- **Publication**: [https://doi.org/10.1039/c8sc04175j](https://doi.org/10.1039/c8sc04175j)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2025`
 - **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
