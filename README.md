@@ -1,6 +1,6 @@
 # Continuous and data-driven descriptor (CDDD)
 
-Low dimension continuous descriptor based on a neural machine translation model. This model has been trained by inputting a IUPAC molecular representaion to obtain its SMILES. The intermediate continuous vector representation encoded by when reading the IUPAC name is a representation of the molecule, containing all the information to generate the output sequence (SMILES). This model has been pretrained on a large dataset combining ChEMBL and ZINC, and embedded in ONNX format for ease of use
+Encodes a molecule as 512 continuous descriptors learned by training a network to translate between different string representations of the same structure. Winter and colleagues reasoned that a model able to convert SMILES into InChI must retain the molecule's full chemical content in the intermediate vector, giving a data-driven descriptor without any property labels. The embedding proved competitive with expert descriptors across QSAR benchmarks, and its dimensions are not individually interpretable.
 
 This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 ### Output
 - **Output Dimension:** `512`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Descriptor of the molecule calculated with the CDDD package
+- **Interpretation:** 512 continuous descriptors learned by translating between molecular string representations.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -61,7 +61,7 @@ _10 of 512 columns are shown_
 - **Source Code**: [https://github.com/sergsb/cddd-onnx](https://github.com/sergsb/cddd-onnx)
 - **Publication**: [https://doi.org/10.1039/c8sc04175j](https://doi.org/10.1039/c8sc04175j)
 - **Publication Type:** `Peer reviewed`
-- **Publication Year:** `2025`
+- **Publication Year:** `2019`
 - **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
 
 ### License
