@@ -2,7 +2,13 @@ Identifier: eos4rw4
 Slug: cddd-onnx
 Status: Ready
 Title: Continuous and data-driven descriptor (CDDD)
-Description: Encodes a molecule as 512 continuous descriptors learned by training a network to translate between different string representations of the same structure. Winter and colleagues reasoned that a model able to convert SMILES into InChI must retain the molecule's full chemical content in the intermediate vector, giving a data-driven descriptor without any property labels. The embedding proved competitive with expert descriptors across QSAR benchmarks, and its dimensions are not individually interpretable.
+Description: Low dimension continuous descriptor based on a neural machine 
+  translation model. This model has been trained by inputting a IUPAC molecular 
+  representaion to obtain its SMILES. The intermediate continuous vector 
+  representation encoded by when reading the IUPAC name is a representation of 
+  the molecule, containing all the information to generate the output sequence 
+  (SMILES). This model has been pretrained on a large dataset combining ChEMBL 
+  and ZINC, and embedded in ONNX format for ease of use
 Deployment:
   - Local
 Source: Local
@@ -16,7 +22,7 @@ Output:
   - Value
 Output Dimension: 512
 Output Consistency: Fixed
-Interpretation: 512 continuous descriptors learned by translating between molecular string representations.
+Interpretation: Descriptor of the molecule calculated with the CDDD package
 Tag:
   - Embedding
   - Descriptor
