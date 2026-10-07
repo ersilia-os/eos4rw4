@@ -1,6 +1,6 @@
 # Continuous and data-driven descriptor (CDDD)
 
-Encodes a molecule as 512 continuous descriptors learned by training a network to translate between different string representations of the same structure. Winter and colleagues reasoned that a model able to convert SMILES into InChI must retain the molecule's full chemical content in the intermediate vector, giving a data-driven descriptor without any property labels. The embedding proved competitive with expert descriptors across QSAR benchmarks, and its dimensions are not individually interpretable.
+Encodes a molecule as 512 continuous descriptors taken from the bottleneck of a translation network. Winter and colleagues trained a recurrent encoder-decoder to rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing the latent vector to carry the molecule rather than the string, and pre-trained it on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves the ONNX port of the encoder and, for molecules it cannot embed, substitutes the embedding of the nearest ChEMBL neighbour.
 
 This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 
