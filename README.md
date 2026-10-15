@@ -2,7 +2,7 @@
 
 Encodes a molecule as 512 continuous descriptors taken from the bottleneck of a translation network. Winter and colleagues trained a recurrent encoder-decoder to rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing the latent vector to carry the molecule rather than the string, and pre-trained it on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves the ONNX port of the encoder. Molecules it cannot embed (invalid SMILES, non-organic, very small or very large compounds) return empty values.
 
-This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
+This model was incorporated on 2025-11-29.Last packaged on 2026-10-15.
 
 ## Information
 ### Identifiers
@@ -44,18 +44,18 @@ _10 of 512 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4rw4](https://hub.docker.com/r/ersiliaos/eos4rw4)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1413`
 - **Environment Size (Mb):** `996`
-- **Image Size (Mb):** `5112.28`
+- **Image Size (Mb):** `3804.97`
 
 **Computational Performance (seconds):**
-- 10 inputs: `31.09`
-- 100 inputs: `24.85`
-- 10000 inputs: `426.01`
+- 10 inputs: `28.59`
+- 100 inputs: `20.86`
+- 10000 inputs: `168.27`
 
 ### References
 - **Source Code**: [https://github.com/sergsb/cddd-onnx](https://github.com/sergsb/cddd-onnx)
