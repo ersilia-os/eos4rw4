@@ -53,9 +53,9 @@ _10 of 512 columns are shown_
 - **Image Size (Mb):** `3804.97`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.59`
-- 100 inputs: `20.86`
-- 10000 inputs: `168.27`
+- 10 inputs: `30.94`
+- 100 inputs: `18.9`
+- 10000 inputs: `168.6`
 
 ### References
 - **Source Code**: [https://github.com/sergsb/cddd-onnx](https://github.com/sergsb/cddd-onnx)
