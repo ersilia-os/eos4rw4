@@ -23,7 +23,7 @@ This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 ### Output
 - **Output Dimension:** `512`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** 512 continuous descriptors learned by translating between molecular string representations. Empty values mean an invalid SMILES or a molecule outside the encoder's domain (atoms other than B, C, N, O, F, P, S, Cl, Br, I; MW 12-600; 4-49 heavy atoms; logP -5 to 7).
+- **Interpretation:** 512 continuous descriptors learned by translating between molecular string representations. Empty values mean an invalid SMILES or a molecule outside the encoders domain (atoms other than B, C, N, O, F, P, S, Cl, Br, I; MW 12-600; 4-49 heavy atoms; logP -5 to 7).
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -48,8 +48,8 @@ _10 of 512 columns are shown_
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip)
 
 ### Resource Consumption
-- **Model Size (Mb):** `2724`
-- **Environment Size (Mb):** `958`
+- **Model Size (Mb):** `1413`
+- **Environment Size (Mb):** `996`
 - **Image Size (Mb):** `5112.28`
 
 **Computational Performance (seconds):**
