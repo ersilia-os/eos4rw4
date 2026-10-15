@@ -1,4 +1,5 @@
 import os
+from rdkit import Chem
 from rdkit import __version__ as rdkit_version
 from FPSim2 import FPSim2Engine
 
@@ -15,15 +16,23 @@ class ChemblNearestNeighbour(object):
         self.fpe = FPSim2Engine(self.fp_database)
     
     def highest_similarity(self, smiles, metric="tanimoto"):
+        """Return the ChEMBL index of the nearest neighbour, or None if there is none.
+
+        None is returned when the query cannot be parsed by RDKit (FPSim2 would
+        raise on it) or when the search yields no hit.
+        """
+        mol = Chem.MolFromSmiles(smiles)
+        if mol is None:
+            return None
         results = self.fpe.top_k(
-            smiles,
+            mol,
             k=1,
             threshold=0.0,
             metric=metric,
             n_workers=1
         )
         if results is None or len(results) == 0:
-            return None, None
+            return None
         print(results)
         idx = results[0][0]
         print(idx)
