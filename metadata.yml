@@ -2,13 +2,13 @@ Identifier: eos4rw4
 Slug: cddd-onnx
 Status: Ready
 Title: Continuous and data-driven descriptor (CDDD)
-Description: Encodes a molecule as 512 continuous descriptors taken from the bottleneck
-  of a translation network. Winter and colleagues trained a recurrent encoder-decoder
-  to rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing
-  the latent vector to carry the molecule rather than the string, and pre-trained
-  it on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves
-  the ONNX port of the encoder and, for molecules it cannot embed, substitutes the
-  embedding of the nearest ChEMBL neighbour.
+Description: Encodes a molecule as 512 continuous descriptors taken from the bottleneck of a
+  translation network. Winter and colleagues trained a recurrent encoder-decoder to
+  rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing
+  the latent vector to carry the molecule rather than the string, and pre-trained it
+  on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves the
+  ONNX port of the encoder. Molecules it cannot embed (invalid SMILES, non-organic,
+  very small or very large compounds) return empty values.
 Deployment:
   - Local
 Source: Local
@@ -22,8 +22,11 @@ Output:
   - Value
 Output Dimension: 512
 Output Consistency: Fixed
-Interpretation: 512 continuous descriptors learned by translating between molecular
-  string representations.
+Interpretation: 512 continuous descriptors learned by translating between molecular string
+  representations. Empty values mean the molecule could not be embedded, namely an
+  invalid SMILES or, after salt removal, atoms other than B, C, N, O, F, P, S, Cl, Br
+  or I, a molecular weight outside 12-600, fewer than 4 or more than 49 heavy atoms,
+  or a logP outside -5 to 7.
 Tag:
   - Embedding
   - Descriptor
