@@ -42,16 +42,18 @@ Source Code: https://github.com/sergsb/cddd-onnx
 License: MIT
 Contributor: GemmaTuron
 Incorporation Date: '2025-11-29'
-Last Packaging Date: '2025-12-24'
+Last Packaging Date: '2026-10-15'
 Release: v1.2.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos4rw4
-Docker Architecture: AMD64
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 1413.0
 Environment Size: 996.0
-Image Size: 5112.28
-Computational Performance 1: 31.09
-Computational Performance 2: 21.58
-Computational Performance 3: 24.85
-Computational Performance 4: 98.79
-Computational Performance 5: 426.01
+Image Size: 3804.97
+Computational Performance 1: 28.59
+Computational Performance 2: 18.84
+Computational Performance 3: 20.86
+Computational Performance 4: 48.11
+Computational Performance 5: 168.27
