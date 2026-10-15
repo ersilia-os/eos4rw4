@@ -1,6 +1,6 @@
 # Continuous and data-driven descriptor (CDDD)
 
-Encodes a molecule as 512 continuous descriptors taken from the bottleneck of a translation network. Winter and colleagues trained a recurrent encoder-decoder to rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing the latent vector to carry the molecule rather than the string, and pre-trained it on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves the ONNX port of the encoder and, for molecules it cannot embed, substitutes the embedding of the nearest ChEMBL neighbour.
+Encodes a molecule as 512 continuous descriptors taken from the bottleneck of a translation network. Winter and colleagues trained a recurrent encoder-decoder to rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing the latent vector to carry the molecule rather than the string, and pre-trained it on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves the ONNX port of the encoder. Molecules it cannot embed (invalid SMILES, non-organic, very small or very large compounds) return empty values.
 
 This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-11-29.Last packaged on 2025-12-24.
 ### Output
 - **Output Dimension:** `512`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** 512 continuous descriptors learned by translating between molecular string representations.
+- **Interpretation:** 512 continuous descriptors learned by translating between molecular string representations. Empty values mean an invalid SMILES or a molecule outside the encoder's domain (atoms other than B, C, N, O, F, P, S, Cl, Br, I; MW 12-600; 4-49 heavy atoms; logP -5 to 7).
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
