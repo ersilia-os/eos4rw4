@@ -3,7 +3,7 @@
 Encodes a molecule as 512 continuous descriptors taken from the bottleneck of a translation network. Winter and colleagues trained a recurrent encoder-decoder to rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing the latent vector to carry the molecule rather than the string, and pre-trained it on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves the ONNX port of the encoder. Molecules it cannot embed (invalid SMILES, non-organic, very small or very large compounds) return empty values.
 
 This model was incorporated on 2025-11-29.
-Last packaged on 2026-10-15.
+Last packaged on 2026-11-19.
 
 ## Information
 ### Identifiers
@@ -50,14 +50,14 @@ _10 of 512 columns are shown_
 - **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos4rw4_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos4rw4_v2.sif)
 
 ### Resource Consumption
-- **Model Size (Mb):** `1413`
-- **Environment Size (Mb):** `996`
-- **Image Size (Mb):** `3804.97`
+- **Model Size (Mb):** `1101`
+- **Environment Size (Mb):** `731`
+- **Image Size (Mb):** `656.78`
 
 **Computational Performance (seconds):**
-- 10 inputs: `30.94`
-- 100 inputs: `18.9`
-- 10000 inputs: `168.6`
+- 10 inputs: `29.92`
+- 100 inputs: `20.17`
+- 10000 inputs: `179.47`
 
 ### References
 - **Source Code**: [https://github.com/sergsb/cddd-onnx](https://github.com/sergsb/cddd-onnx)
